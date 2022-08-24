@@ -1,14 +1,10 @@
-import * as React from "react"
-import type { HeadFC } from "gatsby"
+import * as React from "react";
+import type { HeadFC } from "gatsby";
 
 const IndexPage = () => {
-  return (
-    <main>
+  return <main></main>;
+};
 
-    </main>
-  )
-}
+export default IndexPage;
 
-export default IndexPage
-
-export const Head: HeadFC = () => <title>Reza Hasani</title>
+export const Head: HeadFC = () => <title>Reza Hasani</title>;

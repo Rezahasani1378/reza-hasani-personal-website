@@ -1,12 +1,9 @@
-import * as React from "react"
-import {HeadFC} from "gatsby";
+import * as React from "react";
+import { HeadFC } from "gatsby";
 
 const Portfolio = () => {
-    return (
-        <main>
-        </main>
-    )
-}
+  return <main></main>;
+};
 
-export default Portfolio
-export const Head: HeadFC = () => <title>Portfolio - Reza Hasani</title>
+export default Portfolio;
+export const Head: HeadFC = () => <title>Portfolio - Reza Hasani</title>;
