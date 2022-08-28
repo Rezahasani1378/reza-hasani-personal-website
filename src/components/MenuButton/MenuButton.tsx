@@ -21,7 +21,7 @@ const MenuButton = () => {
         />
       </Styles.DarkToggleContainer>
       <Styles.MenuContainer>
-        <Button title="Home" icon={faHome as IconDefinition} />
+        <Button title="Home" activated icon={faHome as IconDefinition} />
         <Button title="About" icon={faUser as IconDefinition} />
         <Button title="Portfolio" icon={faBriefcase as IconDefinition} />
         <Button title="Contact" icon={faEnvelopeOpen as IconDefinition} />

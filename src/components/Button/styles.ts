@@ -3,6 +3,7 @@ import styled from "styled-components";
 interface ButtonTypes {
   hoverBg?: string;
   mainBg?: string;
+  activated?: boolean;
 }
 
 export const Title = styled.h2<ButtonTypes>`
@@ -29,12 +30,16 @@ export const Button = styled.button<ButtonTypes>`
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: ${({ mainBg }) => mainBg || `var(--main-secondary-color)`};
+  background-color: ${({ mainBg, activated }) =>
+    activated
+      ? `var(--main-primary-color)`
+      : mainBg || `var(--main-secondary-color)`};
   border: none;
   margin: 10px 0;
   cursor: pointer;
   transition: 0.3s;
-  color: var(--bs-gainsboro);
+  color: ${({ activated }) =>
+    activated ? `var(--bs-white)` : `var(--bs-gainsboro)`};
 
   &:hover {
     background-color: ${({ hoverBg }) =>
