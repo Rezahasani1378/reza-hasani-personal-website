@@ -7,8 +7,6 @@ import AboutPage from "./about";
 import Portfolio from "./portfolio";
 import NotFoundPage from "./404";
 import MenuButton from "../components/MenuButton/MenuButton";
-import Button from "../components/Button";
-import { faSun } from "@fortawesome/free-solid-svg-icons";
 
 const IndexPage = () => {
   return (

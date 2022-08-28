@@ -9,6 +9,7 @@ const Button = ({
   mainBg,
   hoverBg,
 }: {
+  icon: IconDefinition;
   title?: string;
   mainBg?: string;
   hoverBg?: string;
