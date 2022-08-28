@@ -14,3 +14,9 @@ export const MenuContainer = styled.ul`
   align-items: center;
   flex-direction: column;
 `;
+
+export const DarkToggleContainer = styled.div`
+  position: absolute;
+  top: 10px;
+  right: 0;
+`;

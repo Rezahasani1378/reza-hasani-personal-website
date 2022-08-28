@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
-export const Title = styled.h2`
+interface ButtonTypes {
+  hoverBg?: string;
+  mainBg?: string;
+}
+
+export const Title = styled.h2<ButtonTypes>`
   border-radius: 30px;
   color: #fff;
   font-weight: 500;
@@ -15,16 +20,16 @@ export const Title = styled.h2`
   top: 0;
   transition: all 0.3s;
   z-index: -1;
-  background-color: var(--main-primary-color);
+  background-color: ${({ hoverBg }) => hoverBg || `var(--main-primary-color)`};
   font-size: 15px;
 `;
 
-export const Button = styled.button`
+export const Button = styled.button<ButtonTypes>`
   position: relative;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: var(--main-secondary-color);
+  background-color: ${({ mainBg }) => mainBg || `var(--main-secondary-color)`};
   border: none;
   margin: 10px 0;
   cursor: pointer;
@@ -32,7 +37,8 @@ export const Button = styled.button`
   color: var(--bs-gainsboro);
 
   &:hover {
-    background-color: var(--main-primary-color);
+    background-color: ${({ hoverBg }) =>
+      hoverBg || `var(--main-primary-color)`};
     color: var(--bs-white);
   }
 

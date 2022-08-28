@@ -6,18 +6,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Button = ({
   icon,
   title,
-  hoverColor,
+  mainBg,
+  hoverBg,
 }: {
   title?: string;
-  hoverColor?: string;
+  mainBg?: string;
+  hoverBg?: string;
 }) => {
   return (
-    <>
-      <Styles.Button>
-        <FontAwesomeIcon icon={icon} />
-        <Styles.Title>{title}</Styles.Title>
-      </Styles.Button>
-    </>
+    <Styles.Button mainBg={mainBg} hoverBg={hoverBg}>
+      <FontAwesomeIcon icon={icon} />
+      {title && (
+        <Styles.Title mainBg={mainBg} hoverBg={hoverBg}>
+          {title}
+        </Styles.Title>
+      )}
+    </Styles.Button>
   );
 };
 
