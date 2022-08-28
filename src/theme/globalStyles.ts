@@ -64,6 +64,7 @@ const GlobalStyles = createGlobalStyle`
   }
   
   body {
+    color: var(--bs-white);
     margin: 0;
   }
 `;
