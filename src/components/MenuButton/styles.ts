@@ -6,6 +6,7 @@ export const Container = styled.div`
   height: 100vh;
   position: absolute;
   right: 30px;
+  z-index: 1;
 `;
 
 export const MenuContainer = styled.ul`

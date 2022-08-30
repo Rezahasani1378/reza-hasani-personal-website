@@ -7,7 +7,7 @@ import { IconDefinition } from "@fortawesome/fontawesome-common-types";
 
 const Home = () => {
   return (
-    <main>
+    <Styles.HomeContainer>
       <Styles.HalfBackground />
       <Styles.HomeDescriptionContainer>
         <Styles.Avatar />
@@ -28,7 +28,7 @@ const Home = () => {
           />
         </Styles.DescriptionContainer>
       </Styles.HomeDescriptionContainer>
-    </main>
+    </Styles.HomeContainer>
   );
 };
 export default Home;
