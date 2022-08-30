@@ -1,6 +1,9 @@
 import * as React from "react";
 import { HeadFC } from "gatsby";
 import * as Styles from "./styles";
+import TextButton from "../../components/TextButton";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { IconDefinition } from "@fortawesome/fontawesome-common-types";
 
 const Home = () => {
   return (
@@ -19,6 +22,10 @@ const Home = () => {
             user‑friendly experiences, I am passionate about building excellent
             software that improves the lives of those around me.
           </Styles.Description>
+          <TextButton
+            icon={faArrowRight as IconDefinition}
+            title="More About Me"
+          />
         </Styles.DescriptionContainer>
       </Styles.HomeDescriptionContainer>
     </main>

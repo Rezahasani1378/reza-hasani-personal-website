@@ -6,7 +6,7 @@ import Contact from "./contact";
 import AboutPage from "./about";
 import Portfolio from "./portfolio";
 import NotFoundPage from "./404";
-import MenuButton from "../components/MenuButton/MenuButton";
+import MenuButton from "../components/MenuButton";
 
 const IndexPage = () => {
   return (
