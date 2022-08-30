@@ -4,13 +4,7 @@ import { IconDefinition } from "@fortawesome/fontawesome-common-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-const TextButton = ({
-  icon,
-  title,
-}: {
-  icon: IconDefinition;
-  title: string;
-}) => {
+const TextButton = ({ title }: { icon: IconDefinition; title: string }) => {
   return (
     <Styles.Button>
       <Styles.Title>{title}</Styles.Title>
