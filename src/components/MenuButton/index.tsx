@@ -21,10 +21,23 @@ const MenuButton = () => {
         />
       </Styles.DarkToggleContainer>
       <Styles.MenuContainer>
-        <Button title="Home" activated icon={faHome as IconDefinition} />
-        <Button title="About" icon={faUser as IconDefinition} />
-        <Button title="Portfolio" icon={faBriefcase as IconDefinition} />
-        <Button title="Contact" icon={faEnvelopeOpen as IconDefinition} />
+        <Button
+          title="Home"
+          route="/"
+          activated
+          icon={faHome as IconDefinition}
+        />
+        <Button title="About" route="/about" icon={faUser as IconDefinition} />
+        <Button
+          title="Portfolio"
+          route="/portfolio"
+          icon={faBriefcase as IconDefinition}
+        />
+        <Button
+          title="Contact"
+          route="/contact"
+          icon={faEnvelopeOpen as IconDefinition}
+        />
       </Styles.MenuContainer>
     </Styles.Container>
   );
