@@ -10,25 +10,56 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
-const MenuButton = () => {
+const MenuButton = ({ route }: { route: string }) => {
+  const buttonsData = [
+    {
+      title: "Home",
+      route: "/",
+      isActivated: function () {
+        return route === this.route;
+      },
+      icon: faHome,
+    },
+    {
+      title: "About",
+      route: "/about",
+      isActivated: function () {
+        return route === this.route;
+      },
+      icon: faUser,
+    },
+    {
+      title: "Portfolio",
+      route: "/portfolio",
+      isActivated: function () {
+        return route === this.route;
+      },
+      icon: faBriefcase,
+    },
+    {
+      title: "Contact",
+      route: "/contact",
+      isActivated: function () {
+        return route === this.route;
+      },
+      icon: faEnvelopeOpen,
+    },
+  ];
+
   return (
     <Styles.Container>
       <Styles.DarkToggleContainer>
         <Button icon={faSun as IconProp} mainBg="#4b4b4b" hoverBg="#656565" />
       </Styles.DarkToggleContainer>
       <Styles.MenuContainer>
-        <Button title="Home" route="/" activated icon={faHome as IconProp} />
-        <Button title="About" route="/about" icon={faUser as IconProp} />
-        <Button
-          title="Portfolio"
-          route="/portfolio"
-          icon={faBriefcase as IconProp}
-        />
-        <Button
-          title="Contact"
-          route="/contact"
-          icon={faEnvelopeOpen as IconProp}
-        />
+        {buttonsData.map((data) => (
+          <Button
+            icon={data.icon as IconProp}
+            activated={data.isActivated()}
+            route={data.route}
+            title={data.title}
+          />
+        ))}
       </Styles.MenuContainer>
     </Styles.Container>
   );
