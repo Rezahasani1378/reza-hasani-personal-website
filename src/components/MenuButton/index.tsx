@@ -8,35 +8,26 @@ import {
   faEnvelopeOpen,
   faSun,
 } from "@fortawesome/free-solid-svg-icons";
-import { IconDefinition } from "@fortawesome/fontawesome-common-types";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 const MenuButton = () => {
   return (
     <Styles.Container>
       <Styles.DarkToggleContainer>
-        <Button
-          icon={faSun as IconDefinition}
-          mainBg="#4b4b4b"
-          hoverBg="#656565"
-        />
+        <Button icon={faSun as IconProp} mainBg="#4b4b4b" hoverBg="#656565" />
       </Styles.DarkToggleContainer>
       <Styles.MenuContainer>
-        <Button
-          title="Home"
-          route="/"
-          activated
-          icon={faHome as IconDefinition}
-        />
-        <Button title="About" route="/about" icon={faUser as IconDefinition} />
+        <Button title="Home" route="/" activated icon={faHome as IconProp} />
+        <Button title="About" route="/about" icon={faUser as IconProp} />
         <Button
           title="Portfolio"
           route="/portfolio"
-          icon={faBriefcase as IconDefinition}
+          icon={faBriefcase as IconProp}
         />
         <Button
           title="Contact"
           route="/contact"
-          icon={faEnvelopeOpen as IconDefinition}
+          icon={faEnvelopeOpen as IconProp}
         />
       </Styles.MenuContainer>
     </Styles.Container>

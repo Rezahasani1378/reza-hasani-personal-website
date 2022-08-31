@@ -14,7 +14,7 @@ const Button = ({
   hoverBg,
   activated,
 }: {
-  icon: IconDefinition;
+  icon: IconProp;
   title?: string;
   route?: string;
   mainBg?: string;
@@ -42,4 +42,4 @@ const Button = ({
   );
 };
 
-export default React.memo(Button);
+export default Button;
