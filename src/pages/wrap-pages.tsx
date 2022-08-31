@@ -1,5 +1,4 @@
 import React from "react";
-import MainLayout from "../layouts/MainLayout";
 import GlobalStyles from "../theme/globalStyles";
 import MenuButton from "../components/MenuButton";
 

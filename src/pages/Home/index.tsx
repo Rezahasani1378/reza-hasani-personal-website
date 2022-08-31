@@ -4,10 +4,11 @@ import * as Styles from "./styles";
 import TextButton from "../../components/TextButton";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { IconDefinition } from "@fortawesome/fontawesome-common-types";
+import AnimationContainer from "../../layouts/AnimationContainer";
 
 const Home = () => {
   return (
-    <Styles.HomeContainer>
+    <AnimationContainer>
       <Styles.HalfBackground />
       <Styles.HomeDescriptionContainer>
         <Styles.Avatar />
@@ -28,7 +29,7 @@ const Home = () => {
           />
         </Styles.DescriptionContainer>
       </Styles.HomeDescriptionContainer>
-    </Styles.HomeContainer>
+    </AnimationContainer>
   );
 };
 export default Home;
