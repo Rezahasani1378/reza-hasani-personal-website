@@ -33,7 +33,7 @@ export const Avatar = styled.div`
   z-index: 11;
   width: 500px;
   padding: 15px 0;
-  background-image: url("https://tunis.ibthemespro.com/static/media/dark.fcd7feb934db7b81903a.jpg");
+  background-image: url("https://i.ibb.co/6v9DcyP/image-1.jpg");
 `;
 
 export const DescriptionContainer = styled.div`
