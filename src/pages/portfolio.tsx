@@ -1,8 +1,17 @@
 import * as React from "react";
 import { HeadFC } from "gatsby";
+import AnimationContainer from "../layouts/AnimationContainer";
+import Title from "../components/Title";
 
 const Portfolio = () => {
-  return <main></main>;
+  return (
+    <AnimationContainer>
+      <Title
+        frontTitle={{ whitePart: "My", greenPart: "Portfolio" }}
+        backTitle="Works"
+      />
+    </AnimationContainer>
+  );
 };
 
 export default Portfolio;
