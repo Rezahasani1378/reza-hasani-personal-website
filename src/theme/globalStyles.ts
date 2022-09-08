@@ -59,14 +59,23 @@ const GlobalStyles = createGlobalStyle`
     --bs-body-bg: #fff;
   }
   
-  html {
-    background-color: var(--bg-main);
+  * {
     box-sizing: border-box;
+
+    &::selection {
+      background-color: #cfa144 !important;
+      color: #fff !important;
+    }
   }
-  
-  body {
-    color: var(--bs-white);
-    margin: 0;
+
+    html {
+      background-color: var(--bg-main);
+    }
+
+    body {
+      color: var(--bs-white);
+      margin: 0;
+    }
   }
 `;
 

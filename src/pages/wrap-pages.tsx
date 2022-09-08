@@ -10,7 +10,7 @@ export function wrapPages({ element }: { element: React.Component }) {
   return (
     <>
       <AnimatedCursor
-        innerSize={9}
+        innerSize={10}
         outerSize={8}
         color="255, 160, 1"
         outerAlpha={0.3}

@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 265px;
-  height: 153px;
   border: 1px solid #252525;
   border-radius: 5px;
   padding: 20px 30px 25px 40px;
+  flex: 0 0 auto;
+  margin-bottom: 30px;
 `;
 
 export const Number = styled.h3`

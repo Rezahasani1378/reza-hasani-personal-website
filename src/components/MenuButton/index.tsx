@@ -21,7 +21,7 @@ const MenuButton = ({ route }: { route: string }) => {
       icon: faHome,
     },
     {
-      title: "About",
+      title: "about",
       route: "/about",
       isActivated: function () {
         return route === this.route;
