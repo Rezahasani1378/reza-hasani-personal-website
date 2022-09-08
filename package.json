@@ -26,6 +26,7 @@
     "gatsby-plugin-styled-components": "^5.21.0",
     "gatsby-plugin-wrap-pages": "^1.1.1",
     "react": "^18.1.0",
+    "react-animated-cursor": "^2.5.1",
     "react-dom": "^18.1.0",
     "styled-components": "^5.3.5"
   },

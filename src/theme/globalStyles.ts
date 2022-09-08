@@ -61,6 +61,7 @@ const GlobalStyles = createGlobalStyle`
   
   html {
     background-color: var(--bg-main);
+    box-sizing: border-box;
   }
   
   body {

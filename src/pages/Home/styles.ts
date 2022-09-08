@@ -33,7 +33,7 @@ export const Avatar = styled.div`
   z-index: 11;
   width: 500px;
   padding: 15px 0;
-  background-image: url("https://i.ibb.co/6v9DcyP/image-1.jpg");
+  background-image: url("https://i.postimg.cc/RZc3RWsC/image-1-1.webp");
 `;
 
 export const DescriptionContainer = styled.div`
