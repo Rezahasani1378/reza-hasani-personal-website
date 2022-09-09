@@ -5,7 +5,6 @@ export const CardContainer = styled.div`
   border-radius: 5px;
   padding: 20px 30px 25px 40px;
   flex: 0 0 auto;
-  margin-bottom: 30px;
 `;
 
 export const Number = styled.h3`

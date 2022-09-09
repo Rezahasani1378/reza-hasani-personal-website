@@ -20,7 +20,6 @@ const InformationContainer = styled.div`
 const DetailCardsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   flex: 0 0 auto;
   width: 50%;
@@ -31,11 +30,43 @@ const DetailCardsContainer = styled.div`
 const CardContainer = styled.div`
   padding: 0 15px;
   flex: 0 0 auto;
-  width: 50%;
+  width: 300px;
   max-width: 100%;
+  margin-bottom: 30px;
 `;
 
 const AboutPage = () => {
+  const cardsData = [
+    {
+      number: 4,
+      text: {
+        firstLine: "Years of",
+        secondLine: "Experience",
+      },
+    },
+    {
+      number: 18,
+      text: {
+        firstLine: "Completed",
+        secondLine: "Projects",
+      },
+    },
+    {
+      number: 7,
+      text: {
+        firstLine: "Colleague's",
+        secondLine: "Recommendations",
+      },
+    },
+    {
+      number: 12,
+      text: {
+        firstLine: "Certificates for",
+        secondLine: "Front-End",
+      },
+    },
+  ];
+
   return (
     <AnimationContainer>
       <Title
@@ -45,30 +76,17 @@ const AboutPage = () => {
       <DetailsInformationContainer>
         <InformationContainer></InformationContainer>
         <DetailCardsContainer>
-          <CardContainer>
-            <DetailCard
-              number={3}
-              text={{ firstLine: "test", secondLine: "of Ex" }}
-            />
-          </CardContainer>
-          <CardContainer>
-            <DetailCard
-              number={3}
-              text={{ firstLine: "test", secondLine: "of Ex" }}
-            />
-          </CardContainer>
-          <CardContainer>
-            <DetailCard
-              number={3}
-              text={{ firstLine: "test", secondLine: "of Ex" }}
-            />
-          </CardContainer>
-          <CardContainer>
-            <DetailCard
-              number={3}
-              text={{ firstLine: "test", secondLine: "of Ex" }}
-            />
-          </CardContainer>
+          {cardsData.map(({ number, text }) => (
+            <CardContainer>
+              <DetailCard
+                number={number}
+                text={{
+                  firstLine: text.firstLine,
+                  secondLine: text.secondLine,
+                }}
+              />
+            </CardContainer>
+          ))}
         </DetailCardsContainer>
       </DetailsInformationContainer>
     </AnimationContainer>
