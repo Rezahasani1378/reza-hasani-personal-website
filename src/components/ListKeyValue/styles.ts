@@ -1,10 +1,22 @@
 import styled from "styled-components";
 
+export const ListKeyValueContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  //todo: font global
+  font-family: Open Sans, sans-serif;
+`;
+
+export const MainTitle = styled.h3`
+  font-size: 26px;
+  padding-bottom: 22px;
+  text-transform: uppercase;
+  margin: 0;
+`;
+
 export const ListContainer = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  //todo: font global
-  font-family: Open Sans, sans-serif;
   list-style: none;
   padding-left: 0;
   margin-bottom: 1rem;
@@ -12,7 +24,7 @@ export const ListContainer = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   flex: 0 0 50%;
   max-width: 50%;
 `;

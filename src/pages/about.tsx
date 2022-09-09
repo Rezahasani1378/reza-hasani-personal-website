@@ -47,7 +47,7 @@ const AboutPage = () => {
       />
       <DetailsInformationContainer>
         <InformationContainer>
-          <ListKeyValue data={listData} />
+          <ListKeyValue data={listData} title="Personal Info" />
         </InformationContainer>
         <DetailCardsContainer>
           {cardsData.map(({ number, text }) => (
