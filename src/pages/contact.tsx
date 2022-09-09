@@ -5,7 +5,7 @@ import Title from "../components/Title";
 
 const Contact = () => {
   return (
-    <AnimationContainer>
+    <AnimationContainer margin="auto">
       <Title
         frontTitle={{ whitePart: "Get In", greenPart: "Touch" }}
         backTitle="Contact"

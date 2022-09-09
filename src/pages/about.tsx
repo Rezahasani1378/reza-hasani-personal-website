@@ -4,6 +4,9 @@ import AnimationContainer from "../layouts/AnimationContainer";
 import Title from "../components/Title";
 import DetailCard from "../components/DetailCard";
 import styled from "styled-components";
+//todo: absolute path
+import { cardsData, listData } from "../../utils/constants";
+import ListKeyValue from "../components/ListKeyValue";
 
 const DetailsInformationContainer = styled.div`
   display: flex;
@@ -13,6 +16,7 @@ const DetailsInformationContainer = styled.div`
 const InformationContainer = styled.div`
   flex: 0 0 auto;
   width: 50%;
+  //todo: replace px with rem
   padding: 0 15px;
   max-width: 100%;
 `;
@@ -23,7 +27,6 @@ const DetailCardsContainer = styled.div`
   align-items: center;
   flex: 0 0 auto;
   width: 50%;
-  padding: 0 15px;
   max-width: 100%;
 `;
 
@@ -36,45 +39,16 @@ const CardContainer = styled.div`
 `;
 
 const AboutPage = () => {
-  const cardsData = [
-    {
-      number: 4,
-      text: {
-        firstLine: "Years of",
-        secondLine: "Experience",
-      },
-    },
-    {
-      number: 18,
-      text: {
-        firstLine: "Completed",
-        secondLine: "Projects",
-      },
-    },
-    {
-      number: 7,
-      text: {
-        firstLine: "Colleague's",
-        secondLine: "Recommendations",
-      },
-    },
-    {
-      number: 12,
-      text: {
-        firstLine: "Certificates for",
-        secondLine: "Front-End",
-      },
-    },
-  ];
-
   return (
-    <AnimationContainer>
+    <AnimationContainer margin="auto">
       <Title
         frontTitle={{ whitePart: "about", greenPart: "me" }}
         backTitle="Resume"
       />
       <DetailsInformationContainer>
-        <InformationContainer></InformationContainer>
+        <InformationContainer>
+          <ListKeyValue data={listData} />
+        </InformationContainer>
         <DetailCardsContainer>
           {cardsData.map(({ number, text }) => (
             <CardContainer>

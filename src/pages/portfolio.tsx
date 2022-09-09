@@ -5,7 +5,7 @@ import Title from "../components/Title";
 
 const Portfolio = () => {
   return (
-    <AnimationContainer>
+    <AnimationContainer margin="auto">
       <Title
         frontTitle={{ whitePart: "My", greenPart: "Portfolio" }}
         backTitle="Works"

@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.main`
+export const Container = styled.main<{ margin?: string; maxWidth?: string }>`
   animation: 0.6s cubic-bezier(0, 0, 0.2, 1) 0s 1 slideInUp;
   position: relative;
+  max-width: ${({ maxWidth }) => maxWidth || "1200px"};
+  margin: ${({ margin }) => margin || "initial"};
 
   @keyframes slideInUp {
     0% {

@@ -8,7 +8,7 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 const Home = () => {
   return (
-    <AnimationContainer>
+    <AnimationContainer maxWidth="initial">
       <Styles.HalfBackground />
       <Styles.HomeDescriptionContainer>
         <Styles.Avatar />
