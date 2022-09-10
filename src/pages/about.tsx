@@ -14,6 +14,7 @@ import { Separator } from "../theme/globalStyles";
 import ExperienceItem from "../components/ExperienceItem";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons/faBriefcase";
 
+//Todo: Styles must be out of this component
 const DetailsInformationContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -53,6 +54,16 @@ const ExperienceTitle = styled.h3`
   font-family: Poppins, sans-serif;
   line-height: 1.6;
   padding-bottom: 3rem;
+`;
+
+const ExperiencesContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  ul {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 `;
 
 const AboutPage = () => {
@@ -99,12 +110,20 @@ const AboutPage = () => {
       </DetailsInformationContainer>
       <Separator />
       <ExperienceTitle>EXPERIENCE & EDUCATION</ExperienceTitle>
-      <ul>
-        <ExperienceItem icon={faBriefcase as IconProp} />
-        <ExperienceItem icon={faBriefcase as IconProp} />
-        <ExperienceItem icon={faBriefcase as IconProp} />
-        <ExperienceItem icon={faBriefcase as IconProp} />
-      </ul>
+      <ExperiencesContainer>
+        <ul>
+          <ExperienceItem icon={faBriefcase as IconProp} />
+          <ExperienceItem icon={faBriefcase as IconProp} />
+          <ExperienceItem icon={faBriefcase as IconProp} />
+          <ExperienceItem icon={faBriefcase as IconProp} />
+        </ul>
+        <ul>
+          <ExperienceItem icon={faBriefcase as IconProp} />
+          <ExperienceItem icon={faBriefcase as IconProp} />
+          <ExperienceItem icon={faBriefcase as IconProp} />
+          <ExperienceItem icon={faBriefcase as IconProp} />
+        </ul>
+      </ExperiencesContainer>
     </AnimationContainer>
   );
 };

@@ -73,4 +73,6 @@ export const Description = styled.p`
   color: #eee;
   font-size: 14px;
   margin: 0;
+  //Todo: lineHeight must be global
+  line-height: 1.6;
 `;
