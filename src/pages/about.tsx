@@ -41,6 +41,14 @@ const CardContainer = styled.div`
   margin-bottom: 30px;
 `;
 
+const ExperienceTitle = styled.h3`
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+`;
+
 const AboutPage = () => {
   const downloadCV = () => {
     const link = document.createElement("a");
@@ -83,6 +91,7 @@ const AboutPage = () => {
           ))}
         </DetailCardsContainer>
       </DetailsInformationContainer>
+      <ExperienceTitle>EXPERIENCE & EDUCATION</ExperienceTitle>
     </AnimationContainer>
   );
 };
