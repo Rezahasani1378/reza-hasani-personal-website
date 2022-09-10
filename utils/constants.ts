@@ -1,5 +1,6 @@
 export const cardsData = [
   {
+    //Todo: Must be Dynamic
     number: 4,
     text: {
       firstLine: "Years of",
@@ -32,6 +33,7 @@ export const cardsData = [
 export const listData = {
   "First Name": "Reza",
   "Last Name": "Hasani",
+  //Todo: Must be Dynamic
   Age: "22 Years",
   Nationality: "Iranian",
   "Open to Work": "Yes",

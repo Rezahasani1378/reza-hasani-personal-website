@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
+  //Todo: Dynamic Colors
   border: 1px solid #252525;
   border-radius: 5px;
   padding: 20px 30px 25px 40px;

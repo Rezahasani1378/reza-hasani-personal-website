@@ -1,6 +1,6 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
-const GlobalStyles = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   :root {
     --main-primary-color: #ffb400;
     --main-secondary-color: #2b2a2a;
@@ -76,7 +76,21 @@ const GlobalStyles = createGlobalStyle`
       color: var(--bs-white);
       margin: 0;
     }
-  }
+    
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
 `;
 
-export default GlobalStyles;
+export const Separator = styled.hr`
+  border: 0;
+  border-top: 1px solid #252525;
+  margin: 70px auto 55px;
+  max-width: 40%;
+  height: 1px;
+  opacity: 0.25;
+  background-color: currentColor;
+  color: inherit;
+`;

@@ -11,7 +11,7 @@ export const Button = styled.button`
   font-size: 15px;
   font-weight: 600;
   line-height: 1.4;
-  outline: none !important;
+  outline: none;
   overflow: hidden;
   position: relative;
   text-align: center;

@@ -1,5 +1,5 @@
 import React from "react";
-import GlobalStyles from "../theme/globalStyles";
+import { GlobalStyles } from "../theme/globalStyles";
 import MenuButton from "../components/MenuButton";
 import { useLocation } from "@reach/router";
 import AnimatedCursor from "react-animated-cursor";

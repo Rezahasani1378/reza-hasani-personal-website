@@ -10,6 +10,9 @@ import ListKeyValue from "../components/ListKeyValue";
 import TextButton from "../components/TextButton";
 import { faDownload } from "@fortawesome/free-solid-svg-icons/faDownload";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { Separator } from "../theme/globalStyles";
+import ExperienceItem from "../components/ExperienceItem";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons/faBriefcase";
 
 const DetailsInformationContainer = styled.div`
   display: flex;
@@ -42,11 +45,14 @@ const CardContainer = styled.div`
 `;
 
 const ExperienceTitle = styled.h3`
+  font-size: 26px;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
   font-family: Poppins, sans-serif;
+  line-height: 1.6;
+  padding-bottom: 3rem;
 `;
 
 const AboutPage = () => {
@@ -91,7 +97,14 @@ const AboutPage = () => {
           ))}
         </DetailCardsContainer>
       </DetailsInformationContainer>
+      <Separator />
       <ExperienceTitle>EXPERIENCE & EDUCATION</ExperienceTitle>
+      <ul>
+        <ExperienceItem icon={faBriefcase as IconProp} />
+        <ExperienceItem icon={faBriefcase as IconProp} />
+        <ExperienceItem icon={faBriefcase as IconProp} />
+        <ExperienceItem icon={faBriefcase as IconProp} />
+      </ul>
     </AnimationContainer>
   );
 };
