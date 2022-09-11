@@ -5,7 +5,7 @@ import Title from "../components/Title";
 import DetailCard from "../components/DetailCard";
 import styled from "styled-components";
 //todo: absolute path
-import { cardsData, listData } from "../../utils/constants";
+import { cardsData, experiences, listData } from "../../utils/constants";
 import ListKeyValue from "../components/ListKeyValue";
 import TextButton from "../components/TextButton";
 import { faDownload } from "@fortawesome/free-solid-svg-icons/faDownload";
@@ -112,16 +112,30 @@ const AboutPage = () => {
       <ExperienceTitle>EXPERIENCE & EDUCATION</ExperienceTitle>
       <ExperiencesContainer>
         <ul>
-          <ExperienceItem icon={faBriefcase as IconProp} />
-          <ExperienceItem icon={faBriefcase as IconProp} />
-          <ExperienceItem icon={faBriefcase as IconProp} />
-          <ExperienceItem icon={faBriefcase as IconProp} />
+          {experiences.technical.map(
+            ({ icon, title, company, period, description }) => (
+              <ExperienceItem
+                icon={icon as IconProp}
+                title={title}
+                location={company}
+                period={period}
+                description={description}
+              />
+            )
+          )}
         </ul>
         <ul>
-          <ExperienceItem icon={faBriefcase as IconProp} />
-          <ExperienceItem icon={faBriefcase as IconProp} />
-          <ExperienceItem icon={faBriefcase as IconProp} />
-          <ExperienceItem icon={faBriefcase as IconProp} />
+          {experiences.academic.map(
+            ({ icon, title, university, period, description }) => (
+              <ExperienceItem
+                icon={icon as IconProp}
+                title={title}
+                location={university}
+                period={period}
+                description={description}
+              />
+            )
+          )}
         </ul>
       </ExperiencesContainer>
     </AnimationContainer>

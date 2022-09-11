@@ -75,6 +75,18 @@ export const GlobalStyles = createGlobalStyle`
     body {
       color: var(--bs-white);
       margin: 0;
+      
+      //todo: scrollbar width
+      
+      &::-webkit-scrollbar-track {
+        background: #333 !important;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background-color: #555;
+        border: 3px solid #333;
+        border-radius: 20px;
+      }
     }
     
     ul {
@@ -82,6 +94,13 @@ export const GlobalStyles = createGlobalStyle`
       margin: 0;
       padding: 0;
     }
+`;
+
+export const MainTitle = styled.h3`
+  font-size: 26px;
+  padding-bottom: 22px;
+  text-transform: uppercase;
+  margin: 0;
 `;
 
 export const Separator = styled.hr`

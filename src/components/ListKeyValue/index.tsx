@@ -1,4 +1,5 @@
 import React from "react";
+import { MainTitle } from "../../theme/globalStyles";
 import * as Styles from "./styles";
 
 const ListKeyValue = ({
@@ -10,7 +11,7 @@ const ListKeyValue = ({
 }) => {
   return (
     <Styles.ListKeyValueContainer>
-      <Styles.MainTitle>{title}</Styles.MainTitle>
+      <MainTitle>{title}</MainTitle>
       <Styles.ListContainer>
         {Object.entries(data).map(([key, value]) => (
           <Styles.ListItem>

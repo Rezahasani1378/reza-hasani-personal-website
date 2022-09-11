@@ -3,21 +3,32 @@ import * as Styles from "./styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
-const ExperienceItem = ({ icon }: { icon: IconProp }) => {
+const ExperienceItem = ({
+  icon,
+  period,
+  title,
+  location,
+  description,
+}: {
+  icon: IconProp;
+  period: { start: string; end: string };
+  title: string;
+  location: string;
+  description: string;
+}) => {
   return (
     <Styles.Container>
       <Styles.Icon>
         <FontAwesomeIcon icon={icon as IconProp} />
       </Styles.Icon>
-      <Styles.Period>2018 - Present</Styles.Period>
+      <Styles.Period>
+        {period.start} - {period.end}
+      </Styles.Period>
       <Styles.Title>
-        WEB DEVELOPER
-        <span>Evanto</span>
+        {title}
+        <span>{location}</span>
       </Styles.Title>
-      <Styles.Description>
-        Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
-        adipisicing elit
-      </Styles.Description>
+      <Styles.Description>{description}</Styles.Description>
     </Styles.Container>
   );
 };

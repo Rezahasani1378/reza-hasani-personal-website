@@ -4,6 +4,7 @@ export const Container = styled.li`
   margin: 0 0 50px;
   padding: 0 20px 0 60px;
   position: relative;
+  min-width: 540px;
 
   &::after {
     border-left: 1px solid #333;

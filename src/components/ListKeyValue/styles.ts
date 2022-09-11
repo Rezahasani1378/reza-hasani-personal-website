@@ -7,13 +7,6 @@ export const ListKeyValueContainer = styled.div`
   font-family: Open Sans, sans-serif;
 `;
 
-export const MainTitle = styled.h3`
-  font-size: 26px;
-  padding-bottom: 22px;
-  text-transform: uppercase;
-  margin: 0;
-`;
-
 export const ListContainer = styled.ul`
   display: flex;
   flex-wrap: wrap;

@@ -1,3 +1,5 @@
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons/faBriefcase";
+
 export const cardsData = [
   {
     //Todo: Must be Dynamic
@@ -42,4 +44,53 @@ export const listData = {
   Email: "Reza.hasani7899@gmail.com",
   Skype: "live:752f39cba13058dd",
   Languages: "English, Persian",
+};
+
+export const experiences = {
+  technical: [
+    {
+      icon: faBriefcase,
+      period: { start: "2018", end: "2019" },
+      title: "Web Developer",
+      company: "Digikala",
+      description: "WOW",
+    },
+    {
+      icon: faBriefcase,
+      period: { start: "2018", end: "2019" },
+      title: "Web Developer",
+      company: "Digikala",
+      description: "WOW",
+    },
+    {
+      icon: faBriefcase,
+      period: { start: "2018", end: "2019" },
+      title: "Web Developer",
+      company: "Digikala",
+      description: "WOW",
+    },
+    {
+      icon: faBriefcase,
+      period: { start: "2018", end: "2019" },
+      title: "Web Developer",
+      company: "Digikala",
+      description: "WOW",
+    },
+  ],
+  academic: [
+    {
+      icon: faBriefcase,
+      period: { start: "2018", end: "2019" },
+      title: "Web Developer",
+      university: "Digikala",
+      description: "WOW",
+    },
+    {
+      icon: faBriefcase,
+      period: { start: "2018", end: "2019" },
+      title: "Web Developer",
+      university: "Digikala",
+      description: "WOW",
+    },
+  ],
 };
