@@ -97,6 +97,7 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 export const MainTitle = styled.h3`
+  font-family: Poppins, sans-serif;
   font-size: 26px;
   padding-bottom: 22px;
   text-transform: uppercase;

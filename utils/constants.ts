@@ -1,4 +1,8 @@
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons/faBriefcase";
+import { faMap } from "@fortawesome/free-solid-svg-icons/faMap";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons/faEnvelopeOpen";
+import { faPhoneSquare } from "@fortawesome/free-solid-svg-icons/faPhoneSquare";
 
 export const cardsData = [
   {
@@ -94,3 +98,21 @@ export const experiences = {
     },
   ],
 };
+
+export const contactDetails = [
+  {
+    icon: faMap,
+    title: "ADDRESS POINT",
+    value: "Tehran",
+  },
+  {
+    icon: faEnvelopeOpen,
+    title: "MAIL ME",
+    value: "Reza.hasani7899@gmail.com",
+  },
+  {
+    icon: faPhoneSquare,
+    title: "CALL ME",
+    value: "+989382679409",
+  },
+];
