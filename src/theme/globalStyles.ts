@@ -114,3 +114,41 @@ export const Separator = styled.hr`
   background-color: currentColor;
   color: inherit;
 `;
+
+export const Input = styled.input`
+  background: #252525;
+  border: 1px solid #111;
+  border-radius: 30px;
+  color: #fff;
+  outline: none !important;
+  padding: 14.5px 26px;
+  transition: 0.3s;
+  width: 100%;
+  margin: 0 7.5px;
+  font-size: 15px;
+
+  &:focus {
+    border: 1px solid var(--main-primary-color);
+  }
+`;
+
+//todo: duplicated previous lines
+export const TextArea = styled.textarea`
+  background: #252525;
+  border: 1px solid #111;
+  border-radius: 30px;
+  color: #fff;
+  height: 200px;
+  outline: none !important;
+  overflow: hidden;
+  padding: 12px 26px;
+  transition: 0.3s;
+  width: 100%;
+  margin: 0 7.5px;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+
+  &:focus {
+    border: 1px solid var(--main-primary-color);
+  }
+`;
