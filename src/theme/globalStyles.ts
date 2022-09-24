@@ -147,6 +147,7 @@ export const TextArea = styled.textarea`
   margin: 0 7.5px;
   font-family: Poppins, sans-serif;
   font-size: 15px;
+  resize: vertical;
 
   &:focus {
     border: 1px solid var(--main-primary-color);
