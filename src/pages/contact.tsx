@@ -93,11 +93,11 @@ const Contact = () => {
         </MyInformation>
         <InputsContainer>
           <InputsRowContainer>
-            <Input placeholder="YOUR NAME" type="text" />
-            <Input placeholder="YOUR EMAIL" type="email" />
+            <Input placeholder="YOUR NAME" name="name" type="text" />
+            <Input placeholder="YOUR EMAIL" name="email" type="email" />
           </InputsRowContainer>
           <InputsRowContainer>
-            <Input placeholder="YOUR SUBJECT" type="text" />
+            <Input placeholder="YOUR SUBJECT" name="subject" type="text" />
           </InputsRowContainer>
           <InputsRowContainer>
             <TextArea placeholder="YOUR MESSAGE" />
