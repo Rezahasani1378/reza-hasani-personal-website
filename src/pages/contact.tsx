@@ -6,7 +6,8 @@ import styled from "styled-components";
 import { MainTitle } from "../theme/globalStyles";
 import ContactDetail from "../components/ContactDetail";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { contactDetails } from "../../utils/constants";
+import { contactDetails, socialMedias } from "../../utils/constants";
+import SocialMedia from "../components/SocialMedia";
 
 const Container = styled.div`
   display: flex;
@@ -23,6 +24,17 @@ const Description = styled.p`
   margin-top: 0;
   margin-bottom: 1.5rem;
   line-height: 1.6;
+`;
+
+const SocialListContainer = styled.ul`
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+`;
+
+const SocialListItem = styled.li`
+  margin-right: 12px;
+  list-style: none;
 `;
 
 const InputsContainer = styled.div``;
@@ -42,6 +54,7 @@ const Contact = () => {
             new projects, creative ideas or opportunities to be part of your
             visions.
           </Description>
+          {/*todo: make these clickable*/}
           {contactDetails.map(({ icon, title, value }) => (
             <ContactDetail
               icon={icon as IconProp}
@@ -49,6 +62,13 @@ const Contact = () => {
               value={value}
             />
           ))}
+          <SocialListContainer>
+            {socialMedias.map(({ icon, href }) => (
+              <SocialListItem>
+                <SocialMedia icon={icon} href={href} />
+              </SocialListItem>
+            ))}
+          </SocialListContainer>
         </MyInformation>
         <InputsContainer></InputsContainer>
       </Container>

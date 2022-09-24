@@ -3,6 +3,9 @@ import { faMap } from "@fortawesome/free-solid-svg-icons/faMap";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons/faEnvelopeOpen";
 import { faPhoneSquare } from "@fortawesome/free-solid-svg-icons/faPhoneSquare";
+import linkedin from "../src/images/linkedin.svg";
+import twitter from "../src/images/twitter.svg";
+import instagram from "../src/images/instagram.svg";
 
 export const cardsData = [
   {
@@ -114,5 +117,20 @@ export const contactDetails = [
     icon: faPhoneSquare,
     title: "CALL ME",
     value: "+989382679409",
+  },
+];
+
+export const socialMedias = [
+  {
+    icon: linkedin,
+    href: "https://www.linkedin.com/in/rezahasani78",
+  },
+  {
+    icon: twitter,
+    href: "https://www.twitter.com/rezahasani78",
+  },
+  {
+    icon: instagram,
+    href: "https://www.instagram.com/reza.hasani78",
   },
 ];
