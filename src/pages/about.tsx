@@ -94,11 +94,12 @@ const AboutPage = () => {
   };
 
   return (
-    <AnimationContainer margin="auto">
-      <Title
-        frontTitle={{ whitePart: "about", greenPart: "me" }}
-        backTitle="Resume"
-      />
+    <AnimationContainer
+      margin="auto"
+      menuPadding="initial"
+      frontTitle={{ whitePart: "About", greenPart: "Me" }}
+      backTitle="Resume"
+    >
       <DetailsInformationContainer>
         <InformationContainer>
           <ListKeyValue data={listData} title="Personal Info" />

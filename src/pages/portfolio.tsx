@@ -43,11 +43,11 @@ const Portfolio = () => {
   const [selectedTab, setSelectedTab] = useState("All");
 
   return (
-    <AnimationContainer margin="auto">
-      <Title
-        frontTitle={{ whitePart: "My", greenPart: "Portfolio" }}
-        backTitle="Works"
-      />
+    <AnimationContainer
+      margin="auto"
+      frontTitle={{ whitePart: "My", greenPart: "Portfolio" }}
+      backTitle="Works"
+    >
       <TabContainer>
         <TabItem onClick={() => setSelectedTab("All")}>All</TabItem>
         <TabItem onClick={() => setSelectedTab("Websites")}>Websites</TabItem>

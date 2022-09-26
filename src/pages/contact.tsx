@@ -15,12 +15,21 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons/faSearch";
 
 const Container = styled.div`
   display: flex;
-  flex-direction: row;
+  padding: 0 100px 0 30px;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 `;
 
 const MyInformation = styled.div`
   flex: 0 0 auto;
-  width: 33.33333333%;
+  width: 34%;
+
+  @media (max-width: 1200px) {
+    flex: initial;
+    width: 100%;
+  }
 `;
 
 const Description = styled.p`
@@ -47,12 +56,16 @@ const InputsContainer = styled.div`
   flex-direction: column;
   margin-left: 40px;
   width: 100%;
+
+  @media (max-width: 1200px) {
+    margin-left: 0;
+  }
 `;
 
 const InputsRowContainer = styled.div`
   display: flex;
   flex-direction: row;
-  margin: 15px 0;
+  margin: 15px -7.5px;
 `;
 
 const ButtonContainer = styled.div`
@@ -62,11 +75,12 @@ const ButtonContainer = styled.div`
 
 const Contact = () => {
   return (
-    <AnimationContainer margin="auto">
-      <Title
-        frontTitle={{ whitePart: "Get In", greenPart: "Touch" }}
-        backTitle="Contact"
-      />
+    <AnimationContainer
+      margin="auto"
+      frontTitle={{ whitePart: "Get I", greenPart: "Touch" }}
+      backTitle="Contact"
+      menuPadding="initial"
+    >
       <Container>
         <MyInformation>
           <MainTitle>DON'T BE SHY !</MainTitle>

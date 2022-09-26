@@ -22,7 +22,6 @@ export const HomeDescriptionContainer = styled.div`
   align-items: center;
   height: 100vh;
   margin-left: 40px;
-  padding-right: 100px;
 
   @media (max-width: 1200px) {
     margin-left: -30px;
