@@ -27,7 +27,7 @@ const InformationContainer = styled.div`
   flex: 0 0 auto;
   width: 50%;
   //todo: replace px with rem
-  padding: 0 15px;
+  padding: 0 30px;
   max-width: 100%;
 
   @media (max-width: 1200px) {
