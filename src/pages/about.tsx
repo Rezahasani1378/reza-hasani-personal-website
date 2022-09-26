@@ -17,7 +17,10 @@ import { faBriefcase } from "@fortawesome/free-solid-svg-icons/faBriefcase";
 //Todo: Styles must be out of this component
 const DetailsInformationContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 `;
 
 const InformationContainer = styled.div`
@@ -26,15 +29,21 @@ const InformationContainer = styled.div`
   //todo: replace px with rem
   padding: 0 15px;
   max-width: 100%;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+    flex: initial;
+  }
 `;
 
 const DetailCardsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  flex: 0 0 auto;
-  width: 50%;
-  max-width: 100%;
+
+  @media (max-width: 1200px) {
+    margin-top: 3rem;
+  }
 `;
 
 const CardContainer = styled.div`
@@ -43,6 +52,10 @@ const CardContainer = styled.div`
   width: 300px;
   max-width: 100%;
   margin-bottom: 30px;
+
+  @media (max-width: 1200px) {
+    width: 50%;
+  }
 `;
 
 const ExperienceTitle = styled.h3`
@@ -59,6 +72,7 @@ const ExperienceTitle = styled.h3`
 const ExperiencesContainer = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 
   ul {
     padding-left: 15px;

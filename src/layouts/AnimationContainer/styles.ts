@@ -6,11 +6,6 @@ export const Container = styled.main<{ margin?: string; maxWidth?: string }>`
   max-width: ${({ maxWidth }) => maxWidth || "1200px"};
   margin: ${({ margin }) => margin || "initial"};
 
-  @media (min-width: 992px) {
-    //for the menu
-    padding: 0 110px 0 30px;
-  }
-
   @keyframes slideInUp {
     0% {
       opacity: 0;

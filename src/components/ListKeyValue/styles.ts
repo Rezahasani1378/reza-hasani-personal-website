@@ -17,9 +17,10 @@ export const ListContainer = styled.ul`
 `;
 
 export const ListItem = styled.li`
+  font-size: 14px;
   padding-bottom: 25px;
   flex: 0 0 50%;
-  max-width: 50%;
+  max-width: 300px;
 `;
 
 export const ListKey = styled.span`

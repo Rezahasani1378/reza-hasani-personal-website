@@ -60,14 +60,18 @@ export const experiences = {
       period: { start: "2018", end: "2019" },
       title: "Web Developer",
       company: "Digikala",
-      description: "WOW",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit\n" +
+        "\n",
     },
     {
       icon: faBriefcase,
       period: { start: "2018", end: "2019" },
       title: "Web Developer",
       company: "Digikala",
-      description: "WOW",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit\n" +
+        "\n",
     },
     {
       icon: faBriefcase,
@@ -90,7 +94,8 @@ export const experiences = {
       period: { start: "2018", end: "2019" },
       title: "Web Developer",
       university: "Digikala",
-      description: "WOW",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit",
     },
     {
       icon: faBriefcase,
