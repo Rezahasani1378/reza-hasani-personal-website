@@ -6,10 +6,13 @@ export const HalfBackground = styled.div`
   left: -83%;
   position: fixed;
   top: -50%;
-  -webkit-transform: rotate(-15deg);
   transform: rotate(-15deg);
   width: 100%;
   z-index: -1;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
 `;
 
 export const HomeDescriptionContainer = styled.div`
@@ -19,26 +22,39 @@ export const HomeDescriptionContainer = styled.div`
   align-items: center;
   height: 100vh;
   margin-left: 40px;
+
+  @media (max-width: 1200px) {
+    margin-left: -30px;
+  }
 `;
 
 export const Avatar = styled.div`
-  background-position: top;
+  background-position: 60%;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 30px;
   box-shadow: 0 0 7px rgb(0, 0, 0, 90%);
-  height: calc(100vh - 100px);
-  left: 40px;
-  top: 40px;
-  z-index: 11;
-  width: 500px;
+  height: calc(100vh - 80px);
+  width: 34%;
   padding: 15px 0;
   background-image: url("https://i.postimg.cc/RZc3RWsC/image-1-1.webp");
+
+  @media (max-width: 1200px) {
+    border-radius: 0;
+    min-width: 400px;
+    height: 100%;
+  }
 `;
 
 export const DescriptionContainer = styled.div`
   max-width: 550px;
   margin-left: 150px;
+
+  //todo: adding media queries for 4K screens
+  @media (max-width: 1200px) {
+    max-width: 600px;
+    margin-left: 75px;
+  }
 `;
 
 export const MainTitle = styled.div`
@@ -52,6 +68,15 @@ export const MainTitle = styled.div`
   text-align: left;
   color: var(--main-primary-color);
 
+  @media (max-width: 1200px) {
+    padding: 0;
+  }
+
+  @media (max-width: 1200px) and (min-width: 992px) {
+    font-size: 42px;
+    line-height: 52px;
+  }
+
   &::before {
     background-color: var(--main-primary-color);
     border-radius: 10px;
@@ -61,6 +86,10 @@ export const MainTitle = styled.div`
     position: absolute;
     top: 29px;
     width: 40px;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
 `;
 
