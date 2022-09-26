@@ -77,7 +77,7 @@ const Contact = () => {
   return (
     <AnimationContainer
       margin="auto"
-      frontTitle={{ whitePart: "Get I", greenPart: "Touch" }}
+      frontTitle={{ whitePart: "Get In", greenPart: "Touch" }}
       backTitle="Contact"
       menuPadding="initial"
     >
