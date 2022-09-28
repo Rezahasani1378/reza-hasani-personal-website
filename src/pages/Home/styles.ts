@@ -26,6 +26,13 @@ export const HomeDescriptionContainer = styled.div`
   @media (max-width: 1200px) {
     margin-left: -30px;
   }
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
 `;
 
 export const Avatar = styled.div`
@@ -44,6 +51,17 @@ export const Avatar = styled.div`
     min-width: 400px;
     height: 100%;
   }
+
+  @media (max-width: 992px) {
+    height: 270px;
+    width: 270px;
+    min-width: initial;
+    border-radius: 50%;
+    background-size: 130%;
+    background-position: -45px -35px;
+    border: 4px solid #252525;
+    padding: 0;
+  }
 `;
 
 export const DescriptionContainer = styled.div`
@@ -54,6 +72,10 @@ export const DescriptionContainer = styled.div`
   @media (max-width: 1200px) {
     max-width: 600px;
     margin-left: 75px;
+  }
+
+  @media (max-width: 992px) {
+    margin-left: 0;
   }
 `;
 
@@ -75,6 +97,13 @@ export const MainTitle = styled.div`
   @media (max-width: 1200px) and (min-width: 992px) {
     font-size: 42px;
     line-height: 52px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 38px;
+    line-height: 48px;
+    margin: 29px 0 13px;
+    text-align: center;
   }
 
   &::before {
@@ -102,4 +131,18 @@ export const Description = styled.div`
   font-size: 16px;
   line-height: 35px;
   margin: 15px 0 28px;
+
+  @media (max-width: 992px) {
+    font-size: 15px;
+    line-height: 30px;
+    margin: 10px 0 23px;
+    text-align: center;
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  @media (max-width: 992px) {
+    display: flex;
+    justify-content: center;
+  }
 `;

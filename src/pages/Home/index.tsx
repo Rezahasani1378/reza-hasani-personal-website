@@ -23,7 +23,13 @@ const Home = () => {
             user‑friendly experiences, I am passionate about building excellent
             software that improves the lives of those around me.
           </Styles.Description>
-          <TextButton icon={faArrowRight as IconProp} title="More About Me" />
+          <Styles.ButtonContainer>
+            <TextButton
+              icon={faArrowRight as IconProp}
+              title="More About Me"
+              onClick={() => true}
+            />
+          </Styles.ButtonContainer>
         </Styles.DescriptionContainer>
       </Styles.HomeDescriptionContainer>
     </AnimationContainer>
