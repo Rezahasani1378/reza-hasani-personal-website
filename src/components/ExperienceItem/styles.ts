@@ -12,6 +12,7 @@ export const Container = styled.li`
     left: 20px;
     position: absolute;
     top: 0;
+    z-index: -1;
   }
 `;
 
@@ -26,7 +27,6 @@ export const Icon = styled.div`
   right: 0;
   text-align: center;
   width: 40px;
-  z-index: 1;
 `;
 
 export const Period = styled.div`
