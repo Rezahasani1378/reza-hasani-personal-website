@@ -1,10 +1,9 @@
 import * as Styles from "./styles";
 import * as React from "react";
-import { IconDefinition } from "@fortawesome/fontawesome-common-types";
+import { useMemo } from "react";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "gatsby";
-import { useMemo } from "react";
 
 const Button = ({
   icon,

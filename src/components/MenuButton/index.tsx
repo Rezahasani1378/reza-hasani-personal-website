@@ -2,11 +2,11 @@ import * as React from "react";
 import * as Styles from "./styles";
 import Button from "./Button";
 import {
-  faHome,
-  faUser,
   faBriefcase,
   faEnvelopeOpen,
+  faHome,
   faSun,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 

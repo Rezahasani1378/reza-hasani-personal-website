@@ -27,7 +27,7 @@ export const Button = styled.button`
   margin: 0;
   box-sizing: border-box;
 
-  &:hover&::before {
+  &:hover &::before {
     transform: translateX(0);
   }
 

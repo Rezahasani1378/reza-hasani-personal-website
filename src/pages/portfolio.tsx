@@ -1,10 +1,9 @@
 import * as React from "react";
+import { useState } from "react";
 import { HeadFC } from "gatsby";
 import AnimationContainer from "../layouts/AnimationContainer";
-import Title from "../components/Title";
 import PortfolioItem from "../components/PortfolioItem";
 import styled from "styled-components";
-import { useState } from "react";
 
 const TabContainer = styled.ul`
   display: flex;

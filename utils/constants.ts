@@ -1,6 +1,5 @@
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons/faBriefcase";
 import { faMap } from "@fortawesome/free-solid-svg-icons/faMap";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons/faEnvelopeOpen";
 import { faPhoneSquare } from "@fortawesome/free-solid-svg-icons/faPhoneSquare";
 import linkedin from "../src/images/linkedin.svg";

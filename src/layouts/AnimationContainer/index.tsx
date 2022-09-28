@@ -1,6 +1,5 @@
 import React from "react";
 import * as Styles from "./styles";
-import { AnimatedContainer } from "./styles";
 
 function AnimationContainer({
   children,

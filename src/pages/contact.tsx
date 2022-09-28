@@ -2,13 +2,11 @@ import * as React from "react";
 import { HeadFC } from "gatsby";
 import AnimationContainer from "../layouts/AnimationContainer";
 import styled from "styled-components";
-import { MainTitle, TextArea, Input } from "../theme/globalStyles";
+import { Input, MainTitle, TextArea } from "../theme/globalStyles";
 import ContactDetail from "../components/ContactDetail";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { contactDetails, socialMedias } from "../../utils/constants";
 import SocialMedia from "../components/SocialMedia";
-import Button from "../components/MenuButton/Button";
-import { faRemoveFormat } from "@fortawesome/free-solid-svg-icons/faRemoveFormat";
 import TextButton from "../components/TextButton";
 import { faSearch } from "@fortawesome/free-solid-svg-icons/faSearch";
 

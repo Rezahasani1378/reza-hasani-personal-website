@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Router, RouteComponentProps } from "@reach/router";
+import { RouteComponentProps, Router } from "@reach/router";
 import Home from "./Home";
 import Contact from "./contact";
 import AboutPage from "./about";

@@ -1,7 +1,6 @@
 import * as React from "react";
 import { HeadFC } from "gatsby";
 import AnimationContainer from "../layouts/AnimationContainer";
-import Title from "../components/Title";
 import DetailCard from "../components/DetailCard";
 import styled from "styled-components";
 //todo: absolute path
@@ -12,7 +11,6 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons/faDownload";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { Separator } from "../theme/globalStyles";
 import ExperienceItem from "../components/ExperienceItem";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons/faBriefcase";
 
 //Todo: Styles must be out of this component
 const DetailsInformationContainer = styled.div`
