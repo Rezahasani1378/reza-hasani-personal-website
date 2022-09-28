@@ -58,6 +58,7 @@ const MenuButton = ({ route }: { route: string }) => {
             activated={data.isActivated()}
             route={data.route}
             title={data.title}
+            smallScreenBackground="#444"
           />
         ))}
       </Styles.MenuContainer>

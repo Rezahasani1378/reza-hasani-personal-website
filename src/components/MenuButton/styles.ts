@@ -14,6 +14,18 @@ export const MenuContainer = styled.ul`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  @media (max-width: 992px) {
+    cursor: none;
+    position: fixed;
+    flex-direction: row;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-around;
+    background: #2b2a2a;
+    z-index: 2;
+  }
 `;
 
 export const DarkToggleContainer = styled.div`

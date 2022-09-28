@@ -23,7 +23,6 @@ export const Button = styled.button`
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  z-index: 1;
   border: 1px solid var(--main-primary-color);
   margin: 0;
   box-sizing: border-box;

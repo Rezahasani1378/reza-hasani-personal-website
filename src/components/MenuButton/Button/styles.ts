@@ -4,6 +4,7 @@ interface ButtonTypes {
   hoverBg?: string;
   mainBg?: string;
   activated?: boolean;
+  smallScreenBackground?: string;
 }
 
 export const Title = styled.h2<ButtonTypes>`
@@ -23,6 +24,10 @@ export const Title = styled.h2<ButtonTypes>`
   z-index: -1;
   background-color: ${({ hoverBg }) => hoverBg || `var(--main-primary-color)`};
   font-size: 15px;
+
+  @media (max-width: 992px) {
+    display: none;
+  }
 `;
 
 export const Button = styled.button<ButtonTypes>`
@@ -32,7 +37,7 @@ export const Button = styled.button<ButtonTypes>`
   border-radius: 50%;
   background-color: ${({ mainBg, activated }) =>
     activated
-      ? `var(--main-primary-color)`
+      ? `var(--main-primary-color) !important`
       : mainBg || `var(--main-secondary-color)`};
   border: none;
   margin: 10px 0;
@@ -40,6 +45,11 @@ export const Button = styled.button<ButtonTypes>`
   transition: 0.3s;
   color: ${({ activated }) =>
     activated ? `var(--bs-white)` : `var(--bs-gainsboro)`};
+
+  @media (max-width: 992px) {
+    background-color: ${({ smallScreenBackground }) =>
+      smallScreenBackground && smallScreenBackground};
+  }
 
   &:hover {
     background-color: ${({ hoverBg }) =>

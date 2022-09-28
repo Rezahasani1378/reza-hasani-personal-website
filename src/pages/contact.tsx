@@ -1,7 +1,6 @@
 import * as React from "react";
 import { HeadFC } from "gatsby";
 import AnimationContainer from "../layouts/AnimationContainer";
-import Title from "../components/Title";
 import styled from "styled-components";
 import { MainTitle, TextArea, Input } from "../theme/globalStyles";
 import ContactDetail from "../components/ContactDetail";
@@ -15,7 +14,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons/faSearch";
 
 const Container = styled.div`
   display: flex;
-  padding: 0 100px 0 30px;
+  padding: 0 100px 60px 30px;
 
   @media (max-width: 1200px) {
     flex-direction: column;
