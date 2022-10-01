@@ -48,6 +48,10 @@ export const Title = styled.h5`
   margin: 7px 0 10px;
   font-family: Open Sans, sans-serif;
 
+  @media (max-width: 576px) {
+    font-size: 17px;
+  }
+
   span {
     font-size: 15px;
     font-weight: 600;

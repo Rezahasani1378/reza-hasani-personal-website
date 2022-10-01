@@ -69,6 +69,31 @@ const ExperienceTitle = styled.h3`
   font-family: Poppins, sans-serif;
   line-height: 1.6;
   padding-bottom: 3rem;
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+`;
+
+const ExperienceTitleMobile = styled.h3`
+  display: none;
+  padding: 0 15px 3rem;
+  //todo: duplicate from the previous constant
+  font-size: 26px;
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  line-height: 1.6;
+
+  @media (max-width: 992px) {
+    display: block;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 21px;
+  }
 `;
 
 const ExperiencesContainer = styled.div`
@@ -79,6 +104,10 @@ const ExperiencesContainer = styled.div`
   ul {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  @media (max-width: 992px) {
+    flex-direction: column;
   }
 `;
 
@@ -127,6 +156,7 @@ const AboutPage = () => {
       <Separator />
       <ExperienceTitle>EXPERIENCE & EDUCATION</ExperienceTitle>
       <ExperiencesContainer>
+        <ExperienceTitleMobile>EXPERIENCE</ExperienceTitleMobile>
         <ul>
           {experiences.technical.map(
             ({ icon, title, company, period, description }) => (
@@ -140,6 +170,7 @@ const AboutPage = () => {
             )
           )}
         </ul>
+        <ExperienceTitleMobile>EDUCATION</ExperienceTitleMobile>
         <ul>
           {experiences.academic.map(
             ({ icon, title, university, period, description }) => (
