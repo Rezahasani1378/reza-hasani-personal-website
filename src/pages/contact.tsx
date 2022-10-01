@@ -9,6 +9,7 @@ import { contactDetails, socialMedias } from "../../utils/constants";
 import SocialMedia from "../components/SocialMedia";
 import TextButton from "../components/TextButton";
 import { faSearch } from "@fortawesome/free-solid-svg-icons/faSearch";
+import toast from "react-hot-toast";
 
 const Container = styled.div`
   display: flex;
@@ -71,12 +72,15 @@ const ButtonContainer = styled.div`
 `;
 
 const Contact = () => {
+  const sendMessage = async () => {
+    return await Promise.resolve();
+  };
+
   return (
     <AnimationContainer
       margin="auto"
       frontTitle={{ whitePart: "Get In", greenPart: "Touch" }}
       backTitle="Contact"
-      menuPadding="initial"
     >
       <Container>
         <MyInformation>
@@ -118,7 +122,29 @@ const Contact = () => {
               //todo: replace with send
               icon={faSearch as IconProp}
               title="Send Message"
-              onClick={() => true}
+              onClick={() =>
+                toast.promise(
+                  sendMessage(),
+                  {
+                    loading: "Saving...",
+                    success: "Message Sent!",
+                    error: "Message Wasn't Sent :(",
+                  },
+                  {
+                    style: {
+                      borderRadius: "10px",
+                      background: "var(--main-secondary-color)",
+                      color: "#fff",
+                      fontFamily: "Open Sans,sans-serif",
+                      cursor: "default",
+                    },
+                    iconTheme: {
+                      primary: "var(--main-primary-color)",
+                      secondary: "#fff",
+                    },
+                  }
+                )
+              }
             />
           </ButtonContainer>
         </InputsContainer>

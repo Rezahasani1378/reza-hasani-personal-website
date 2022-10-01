@@ -12,8 +12,8 @@ const DetailCard = ({
     <Styles.CardContainer>
       <Styles.Number>{number}</Styles.Number>
       <Styles.Text>
-        {text.firstLine}
-        <span>{text.secondLine}</span>
+        {text.firstLine} <br />
+        {text.secondLine}
       </Styles.Text>
     </Styles.CardContainer>
   );

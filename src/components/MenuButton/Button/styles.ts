@@ -24,6 +24,13 @@ export const Title = styled.h2<ButtonTypes>`
   z-index: -1;
   background-color: ${({ hoverBg }) => hoverBg || `var(--main-primary-color)`};
   font-size: 15px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1200px) {
+    height: 45px;
+    font-size: 14px;
+  }
 
   @media (max-width: 992px) {
     display: none;
@@ -51,6 +58,11 @@ export const Button = styled.button<ButtonTypes>`
       smallScreenBackground && smallScreenBackground};
   }
 
+  @media (max-width: 1200px) {
+    height: 45px;
+    width: 45px;
+  }
+
   &:hover {
     background-color: ${({ hoverBg }) =>
       hoverBg || `var(--main-primary-color)`};
@@ -63,5 +75,9 @@ export const Button = styled.button<ButtonTypes>`
     opacity: 1;
     right: 27px;
     text-align: center;
+
+    @media (max-width: 1200px) {
+      right: 24px;
+    }
   }
 `;

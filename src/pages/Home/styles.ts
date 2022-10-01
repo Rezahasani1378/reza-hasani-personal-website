@@ -22,6 +22,7 @@ export const HomeDescriptionContainer = styled.div`
   align-items: center;
   height: 100vh;
   margin-left: 40px;
+  padding: 0 15px;
 
   @media (max-width: 1200px) {
     margin-left: -30px;
@@ -31,7 +32,7 @@ export const HomeDescriptionContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-left: 0;
   }
 `;
 
@@ -61,6 +62,11 @@ export const Avatar = styled.div`
     background-position: -45px -35px;
     border: 4px solid #252525;
     padding: 0;
+  }
+
+  @media (max-width: 576px) {
+    height: 230px;
+    width: 230px;
   }
 `;
 
@@ -106,6 +112,12 @@ export const MainTitle = styled.div`
     text-align: center;
   }
 
+  @media (max-width: 576px) {
+    font-size: 29px;
+    line-height: 39px;
+    margin: 18px 0 13px;
+  }
+
   &::before {
     background-color: var(--main-primary-color);
     border-radius: 10px;
@@ -137,6 +149,11 @@ export const Description = styled.div`
     line-height: 30px;
     margin: 10px 0 23px;
     text-align: center;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 28px;
   }
 `;
 

@@ -54,6 +54,10 @@ const CardContainer = styled.div`
   @media (max-width: 1200px) {
     width: 50%;
   }
+
+  @media (max-width: 576px) {
+    margin-bottom: 25px;
+  }
 `;
 
 const ExperienceTitle = styled.h3`
@@ -94,7 +98,6 @@ const AboutPage = () => {
   return (
     <AnimationContainer
       margin="auto"
-      menuPadding="initial"
       frontTitle={{ whitePart: "About", greenPart: "Me" }}
       backTitle="Resume"
     >

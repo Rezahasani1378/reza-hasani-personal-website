@@ -3,6 +3,7 @@ import { GlobalStyles } from "../theme/globalStyles";
 import MenuButton from "../components/MenuButton";
 import { useLocation } from "@reach/router";
 import AnimatedCursor from "react-animated-cursor";
+import { Toaster } from "react-hot-toast";
 
 export function wrapPages({ element }: { element: React.Component }) {
   const location = useLocation();
@@ -22,6 +23,7 @@ export function wrapPages({ element }: { element: React.Component }) {
         }}
       />
       <GlobalStyles />
+      <Toaster />
       <MenuButton route={location.pathname} />
       {element}
     </>

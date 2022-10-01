@@ -24,6 +24,12 @@ export const TitleContainer = styled.div`
   padding: 80px 0;
   position: relative;
   width: 100%;
+
+  @media (max-width: 576px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: flex-start;
+  }
 `;
 
 export const FrontTitle = styled.h1`
@@ -32,6 +38,10 @@ export const FrontTitle = styled.h1`
   font-weight: 900;
   margin: 0;
   text-transform: uppercase;
+
+  @media (max-width: 576px) {
+    font-size: 35px;
+  }
 `;
 
 export const GreenPart = styled.span`
@@ -51,6 +61,15 @@ export const BackTitle = styled.span`
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
+
+  @media (max-width: 767px) {
+    font-size: 45px;
+    transform: translateY(-20%);
+  }
+
+  @media (max-width: 576px) {
+    text-align: left;
+  }
 `;
 
 export const ElementsContainer = styled.div<{
@@ -61,8 +80,8 @@ export const ElementsContainer = styled.div<{
   max-width: ${({ maxWidth }) => maxWidth || "1200px"};
   margin: ${({ margin }) => margin || "initial"};
 
-  @media (min-width: 992px) {
+  @media (max-width: 992px) {
     //for the fixed menu
-    padding-right: ${({ menuPadding }) => menuPadding || "100px"};
+    padding-bottom: ${({ menuPadding }) => menuPadding || "100px"};
   }
 `;

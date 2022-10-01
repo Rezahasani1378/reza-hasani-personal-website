@@ -6,6 +6,10 @@ export const CardContainer = styled.div`
   border-radius: 5px;
   padding: 20px 30px 25px 40px;
   flex: 0 0 auto;
+
+  @media (max-width: 576px) {
+    padding: 15px 20px 20px 25px;
+  }
 `;
 
 export const Number = styled.h3`
@@ -16,6 +20,10 @@ export const Number = styled.h3`
   font-weight: 700;
   margin: 0;
   width: fit-content;
+
+  @media (max-width: 576px) {
+    font-size: 40px;
+  }
 
   &::after {
     content: "+";
@@ -39,6 +47,11 @@ export const Text = styled.p`
     display: block;
   }
 
+  @media (max-width: 576px) {
+    padding-left: 0;
+    font-size: 2.8vw;
+  }
+
   &::before {
     background: #777;
     content: "";
@@ -47,5 +60,9 @@ export const Text = styled.p`
     position: absolute;
     top: 11px;
     width: 30px;
+
+    @media (max-width: 576px) {
+      display: none;
+    }
   }
 `;

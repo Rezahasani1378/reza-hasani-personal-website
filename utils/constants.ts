@@ -26,7 +26,7 @@ export const cardsData = [
     number: 7,
     text: {
       firstLine: "Colleague's",
-      secondLine: "Recommendations",
+      secondLine: "Recommended",
     },
   },
   {

@@ -21,6 +21,12 @@ export const ListItem = styled.li`
   padding-bottom: 25px;
   flex: 0 0 50%;
   max-width: 300px;
+  display: flex;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    line-height: 1.6;
+  }
 `;
 
 export const ListKey = styled.span`
