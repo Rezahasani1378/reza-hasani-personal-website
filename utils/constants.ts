@@ -139,21 +139,43 @@ export const socialMedias = [
   },
 ];
 
+const portfolioContents = {
+  Website: [
+    {
+      title: "Test",
+      backgroundImage: "https://i.postimg.cc/RZc3RWsC/image-1-1.webp",
+      link: "",
+    },
+  ],
+  Logo: [
+    {
+      title: "Test",
+      backgroundImage: "https://i.postimg.cc/RZc3RWsC/image-1-1.webp",
+      link: "",
+    },
+    {
+      title: "Test",
+      backgroundImage: "https://i.postimg.cc/RZc3RWsC/image-1-1.webp",
+      link: "",
+    },
+  ],
+};
+
 export const portfolioTabValues = [
   {
     id: 0,
     tabTitle: "All",
-    content: [],
+    content: [...portfolioContents["Website"], ...portfolioContents["Logo"]],
   },
   {
     id: 1,
     tabTitle: "Website",
-    content: [],
+    content: portfolioContents["Website"],
   },
   {
     id: 2,
     tabTitle: "Logo",
-    content: [],
+    content: portfolioContents["Logo"],
   },
 ];
 

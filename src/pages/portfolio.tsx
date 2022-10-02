@@ -62,21 +62,15 @@ const Portfolio = () => {
         ))}
       </TabContainer>
       <ItemsContainer>
-        <PortfolioItem
-          title="Test"
-          backgroundImage="https://i.postimg.cc/RZc3RWsC/image-1-1.webp"
-          link={""}
-        />
-        <PortfolioItem
-          title="Test"
-          backgroundImage="https://i.postimg.cc/RZc3RWsC/image-1-1.webp"
-          link={""}
-        />
-        <PortfolioItem
-          title="Test"
-          backgroundImage="https://i.postimg.cc/RZc3RWsC/image-1-1.webp"
-          link={""}
-        />
+        {portfolioTabValues[selectedTab].content.map(
+          ({ title, backgroundImage, link }) => (
+            <PortfolioItem
+              title={title}
+              backgroundImage={backgroundImage}
+              link={link}
+            />
+          )
+        )}
       </ItemsContainer>
     </AnimationContainer>
   );
