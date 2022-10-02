@@ -5,8 +5,13 @@ import TextButton from "../../components/TextButton";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import AnimationContainer from "../../layouts/AnimationContainer";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { useState } from "react";
+import Modal from "../../components/Modal";
+import AboutPage from "../about";
 
 const Home = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <AnimationContainer maxWidth="initial">
       <Styles.HalfBackground />
@@ -27,8 +32,13 @@ const Home = () => {
             <TextButton
               icon={faArrowRight as IconProp}
               title="More About Me"
-              onClick={() => true}
+              onClick={() => setIsModalOpen(true)}
             />
+            {isModalOpen && (
+              <Modal>
+                <AboutPage />
+              </Modal>
+            )}
           </Styles.ButtonContainer>
         </Styles.DescriptionContainer>
       </Styles.HomeDescriptionContainer>
