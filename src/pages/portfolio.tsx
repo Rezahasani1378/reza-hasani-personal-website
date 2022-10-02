@@ -4,8 +4,9 @@ import { HeadFC } from "gatsby";
 import AnimationContainer from "../layouts/AnimationContainer";
 import PortfolioItem from "../components/PortfolioItem";
 import styled from "styled-components";
+import { portfolioTabValues } from "../../utils/constants";
 
-const TabContainer = styled.ul`
+const TabContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -13,8 +14,8 @@ const TabContainer = styled.ul`
   margin-bottom: 25px !important;
 `;
 
-const TabItem = styled.li`
-  color: #eee;
+const TabItem = styled.button<{ active: boolean }>`
+  color: ${({ active }) => (active ? "var(--main-primary-color)" : "#eee")};
   cursor: pointer;
   list-style: none;
   outline: none;
@@ -24,6 +25,8 @@ const TabItem = styled.li`
   margin: 0 15px 15px;
   font-family: Poppins, sans-serif;
   text-transform: uppercase;
+  background: none;
+  border: none;
 
   &:hover {
     color: var(--main-primary-color);
@@ -39,7 +42,7 @@ const ItemsContainer = styled.div`
 `;
 
 const Portfolio = () => {
-  const [selectedTab, setSelectedTab] = useState("All");
+  const [selectedTab, setSelectedTab] = useState(0);
 
   return (
     <AnimationContainer
@@ -48,9 +51,15 @@ const Portfolio = () => {
       backTitle="Works"
     >
       <TabContainer>
-        <TabItem onClick={() => setSelectedTab("All")}>All</TabItem>
-        <TabItem onClick={() => setSelectedTab("Websites")}>Websites</TabItem>
-        <TabItem onClick={() => setSelectedTab("Logos")}>Logos</TabItem>
+        {portfolioTabValues.map(({ tabTitle, id }) => (
+          <TabItem
+            onClick={() => setSelectedTab(id)}
+            active={id === selectedTab}
+            key={id}
+          >
+            {tabTitle}
+          </TabItem>
+        ))}
       </TabContainer>
       <ItemsContainer>
         <PortfolioItem
