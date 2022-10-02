@@ -34,11 +34,11 @@ const TabItem = styled.button<{ active: boolean }>`
 `;
 
 const ItemsContainer = styled.div`
-  grid-gap: 30px;
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
-  padding-bottom: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0 15px 70px;
 `;
 
 const Portfolio = () => {

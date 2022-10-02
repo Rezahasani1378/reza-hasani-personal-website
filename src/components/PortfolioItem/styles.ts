@@ -7,7 +7,8 @@ export const CardAnimation = styled.div`
   transition-duration: 1.2s;
   border-radius: 1rem;
   height: 100%;
-  width: 100%;
+  width: 350px;
+  margin: 10px;
 `;
 
 export const TitleContainer = styled.h3`
@@ -45,7 +46,6 @@ export const Container = styled.a`
   display: flex;
   height: 229px;
   position: relative;
-  width: 100%;
 
   &:hover ${TitleContainer} {
     opacity: 1;
