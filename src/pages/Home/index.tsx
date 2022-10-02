@@ -35,7 +35,7 @@ const Home = () => {
               onClick={() => setIsModalOpen(true)}
             />
             {isModalOpen && (
-              <Modal>
+              <Modal closeModal={() => setIsModalOpen(false)}>
                 <AboutPage />
               </Modal>
             )}
