@@ -13,7 +13,7 @@ import toast from "react-hot-toast";
 
 const Container = styled.div`
   display: flex;
-  padding: 0 100px 60px 30px;
+  padding: 0 30px 60px;
 
   @media (max-width: 1200px) {
     flex-direction: column;
