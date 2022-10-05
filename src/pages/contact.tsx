@@ -8,8 +8,8 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { contactDetails, socialMedias } from "../../utils/constants";
 import SocialMedia from "../components/SocialMedia";
 import TextButton from "../components/TextButton";
-import { faSearch } from "@fortawesome/free-solid-svg-icons/faSearch";
 import toast from "react-hot-toast";
+import { faMailForward } from "@fortawesome/free-solid-svg-icons/faMailForward";
 
 const Container = styled.div`
   display: flex;
@@ -120,7 +120,7 @@ const Contact = () => {
           <ButtonContainer>
             <TextButton
               //todo: replace with send
-              icon={faSearch as IconProp}
+              icon={faMailForward as IconProp}
               title="Send Message"
               onClick={() =>
                 toast.promise(

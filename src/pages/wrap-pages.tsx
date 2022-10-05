@@ -2,6 +2,7 @@ import React from "react";
 import { GlobalStyles } from "../theme/globalStyles";
 import MenuButton from "../components/MenuButton";
 import { useLocation } from "@reach/router";
+// @ts-ignore
 import AnimatedCursor from "react-animated-cursor";
 import { Toaster } from "react-hot-toast";
 import { isMobile } from "../../utils/constants";
