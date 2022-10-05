@@ -69,7 +69,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
     html {
-      background-color: var(--bg-main);
+      background-color: ${(props) => props.theme.body.primary};
     }
 
     body {
