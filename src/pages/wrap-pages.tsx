@@ -1,21 +1,11 @@
-import React, { useState } from "react";
-import { GlobalStyles } from "../theme/globalStyles";
-import MenuButton from "../components/MenuButton";
-import { useLocation } from "@reach/router";
+import React, { useEffect, useState } from "react";
 // @ts-ignore
 import AnimatedCursor from "react-animated-cursor";
 import { Toaster } from "react-hot-toast";
 import { isMobile } from "../../utils/constants";
-import { ThemeProvider } from "styled-components";
-import { darkTheme, lightTheme } from "../theme/toggleTheme";
+import Layout from "../layouts";
 
 export function wrapPages({ element }: { element: React.Component }) {
-  //todo: change to context
-  //todo: it must read from the local storage to save the previous state
-  const [theme, setTheme] = useState("dark");
-
-  const location = useLocation();
-
   return (
     <>
       {!isMobile() && (
@@ -32,14 +22,8 @@ export function wrapPages({ element }: { element: React.Component }) {
           }}
         />
       )}
-      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-        <>
-          <GlobalStyles />
-          <Toaster />
-          <MenuButton route={location.pathname} />
-          {element}
-        </>
-      </ThemeProvider>
+      <Toaster />
+      <Layout element={element} />
     </>
   );
 }
