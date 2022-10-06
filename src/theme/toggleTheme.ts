@@ -10,6 +10,7 @@ const sharedThemes = {
   GREEN: "#2b2a2a",
   RAISIN_BLACK: "#252525",
   GAINSBORO: "#dddddd",
+  DARK_CHARCOAL: "#333333",
 };
 
 export const lightTheme = {
@@ -21,6 +22,7 @@ export const lightTheme = {
     primary: sharedThemes.GRANIT_GRAY,
     secondary: sharedThemes.GOLD,
     tertiary: sharedThemes.BLACK_OLIVE,
+    description: sharedThemes.GRANIT_GRAY,
     backgroundTitle: sharedThemes.DARK_GUNMETAL_OPACITY,
   },
   button: {
@@ -32,6 +34,10 @@ export const lightTheme = {
     },
   },
   label: sharedThemes.BRIGHT_GRAY,
+  border: {
+    primary: `1px solid ${sharedThemes.GAINSBORO}`,
+    secondary: `1px solid ${sharedThemes.GAINSBORO}`,
+  },
 };
 
 export const darkTheme = {
@@ -43,6 +49,7 @@ export const darkTheme = {
     primary: sharedThemes.WHITE,
     secondary: sharedThemes.GOLD,
     tertiary: sharedThemes.BRIGHT_GRAY,
+    description: sharedThemes.BRIGHT_GRAY,
     backgroundTitle: sharedThemes.WHITE_OPACITY,
   },
   button: {
@@ -54,4 +61,8 @@ export const darkTheme = {
     },
   },
   label: sharedThemes.RAISIN_BLACK,
+  border: {
+    primary: `1px solid ${sharedThemes.RAISIN_BLACK}`,
+    secondary: `1px solid ${sharedThemes.DARK_CHARCOAL}`,
+  },
 };

@@ -6,7 +6,7 @@ export const Container = styled.li`
   position: relative;
 
   &::after {
-    border-left: 1px solid #333;
+    border-left: ${({ theme }) => theme.border.secondary};
     bottom: 0;
     content: "";
     left: 20px;
@@ -30,11 +30,11 @@ export const Icon = styled.div`
 `;
 
 export const Period = styled.div`
-  background-color: #252525;
+  background-color: ${({ theme }) => theme.label};
   font-family: Open Sans, sans-serif;
   text-transform: uppercase;
   border-radius: 20px;
-  color: #fff;
+  color: ${({ theme }) => theme.fontColor.primary};
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
@@ -47,6 +47,7 @@ export const Title = styled.h5`
   font-size: 18px;
   margin: 7px 0 10px;
   font-family: Open Sans, sans-serif;
+  color: ${({ theme }) => theme.fontColor.primary};
 
   @media (max-width: 576px) {
     font-size: 17px;
@@ -58,9 +59,8 @@ export const Title = styled.h5`
     opacity: 0.8;
     padding-left: 26px;
     position: relative;
-
     &::before {
-      background-color: #fff;
+      background-color: ${({ theme }) => theme.fontColor.primary};
       content: "";
       height: 2px;
       left: 7px;
@@ -74,7 +74,7 @@ export const Title = styled.h5`
 
 export const Description = styled.p`
   font-family: Open Sans, sans-serif;
-  color: #eee;
+  color: ${({ theme }) => theme.fontColor.description};
   font-size: 14px;
   margin: 0;
   //Todo: lineHeight must be global

@@ -46,7 +46,7 @@ export const Button = styled.button`
 `;
 
 export const Title = styled.h2`
-  color: ${(props) => props.theme.fontColor.primary};
+  color: ${({ theme }) => theme.fontColor.primary};
   margin: 0;
   padding: 0 25px 0 30px;
   text-transform: uppercase;

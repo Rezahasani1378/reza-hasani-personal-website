@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CardContainer = styled.div`
   //Todo: Dynamic Colors
-  border: 1px solid #252525;
+  border: ${({ theme }) => theme.border.primary};
   border-radius: 5px;
   padding: 20px 30px 25px 40px;
   flex: 0 0 auto;
@@ -42,6 +42,7 @@ export const Text = styled.p`
   padding-left: 45px;
   margin: 0;
   line-height: 1.6;
+  color: ${({ theme }) => theme.fontColor.primary};
 
   span {
     display: block;

@@ -22,6 +22,7 @@ export const ListItem = styled.li`
   flex: 0 0 50%;
   max-width: 300px;
   display: flex;
+  color: ${({ theme }) => theme.fontColor.primary};
 
   @media (max-width: 576px) {
     flex-direction: column;

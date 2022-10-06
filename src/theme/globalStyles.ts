@@ -69,7 +69,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
     html {
-      background-color: ${(props) => props.theme.body.primary};
+      background-color: ${({ theme }) => theme.body.primary};
     }
 
     body {
@@ -102,16 +102,15 @@ export const MainTitle = styled.h3`
   padding-bottom: 22px;
   text-transform: uppercase;
   margin: 0;
+  color: ${({ theme }) => theme.fontColor.primary};
 `;
 
 export const Separator = styled.hr`
-  border: 0;
-  border-top: 1px solid #252525;
+  border-top: ${({ theme }) => theme.border.primary};
   margin: 70px auto 55px;
   max-width: 40%;
   height: 1px;
   opacity: 0.25;
-  background-color: currentColor;
   color: inherit;
 `;
 

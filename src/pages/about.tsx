@@ -69,7 +69,7 @@ const ExperienceTitle = styled.h3`
   font-family: Poppins, sans-serif;
   line-height: 1.6;
   padding-bottom: 3rem;
-
+  color: ${({ theme }) => theme.fontColor.primary};
   @media (max-width: 992px) {
     display: none;
   }
@@ -86,7 +86,7 @@ const ExperienceTitleMobile = styled.h3`
   margin: 0;
   font-family: Poppins, sans-serif;
   line-height: 1.6;
-
+  color: ${({ theme }) => theme.fontColor.primary};
   @media (max-width: 992px) {
     display: block;
   }

@@ -33,7 +33,7 @@ export const TitleContainer = styled.div`
 `;
 
 export const FrontTitle = styled.h1`
-  color: #fff;
+  color: ${({ theme }) => theme.fontColor.primary};
   font-size: 56px;
   font-weight: 900;
   margin: 0;
@@ -49,7 +49,7 @@ export const GreenPart = styled.span`
 `;
 
 export const BackTitle = styled.span`
-  color: hsla(0, 0%, 100%, 0.07);
+  color: ${({ theme }) => theme.fontColor.backgroundTitle};
   font-size: 110px;
   font-weight: 800;
   left: 0;
