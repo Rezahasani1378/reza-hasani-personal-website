@@ -42,16 +42,14 @@ export const Button = styled.button<ButtonTypes>`
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: ${({ mainBg, activated }) =>
-    activated
-      ? `var(--main-primary-color) !important`
-      : mainBg || `var(--main-secondary-color)`};
+  background-color: ${({ activated, theme }) =>
+    theme.button[activated ? "activated" : "background"]};
   border: none;
   margin: 10px 0;
   cursor: pointer;
   transition: 0.3s;
-  color: ${({ activated }) =>
-    activated ? `var(--bs-white)` : `var(--bs-gainsboro)`};
+  color: ${({ activated, theme }) =>
+    theme.button.icon[activated ? "activated" : "primary"]};
 
   @media (max-width: 992px) {
     background-color: ${({ smallScreenBackground }) =>

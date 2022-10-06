@@ -15,6 +15,7 @@ export default ({ element }: { element: React.Component }) => {
         <GlobalStyles />
         <MenuButton
           route={location.pathname}
+          theme={theme}
           toggleTheme={() => setTheme(theme === "dark" ? "light" : "dark")}
         />
         {element}

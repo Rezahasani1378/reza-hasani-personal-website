@@ -135,7 +135,7 @@ export const MainTitle = styled.div`
 `;
 
 export const JobTitle = styled.span`
-  color: var(--bs-white);
+  color: ${(props) => props.theme.fontColor.primary};
 `;
 
 export const Description = styled.div`
@@ -143,6 +143,7 @@ export const Description = styled.div`
   font-size: 16px;
   line-height: 35px;
   margin: 15px 0 28px;
+  color: ${(props) => props.theme.fontColor.primary};
 
   @media (max-width: 992px) {
     font-size: 15px;

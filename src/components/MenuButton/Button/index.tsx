@@ -9,15 +9,15 @@ const Button = ({
   icon,
   route,
   title,
-  mainBg,
+  onClick,
   hoverBg,
   activated,
   smallScreenBackground,
 }: {
   icon: IconProp;
   title?: string;
+  onClick?: () => void;
   route?: string;
-  mainBg?: string;
   //todo: merge these types with ButtonTypes interface in src/components/MenuButton/Button
   hoverBg?: string;
   activated?: boolean;
@@ -26,20 +26,16 @@ const Button = ({
   const renderButton = useMemo(
     () => (
       <Styles.Button
-        mainBg={mainBg}
         hoverBg={hoverBg}
         activated={activated}
         smallScreenBackground={smallScreenBackground}
+        onClick={onClick}
       >
         <FontAwesomeIcon icon={icon as IconProp} />
-        {title && (
-          <Styles.Title mainBg={mainBg} hoverBg={hoverBg}>
-            {title}
-          </Styles.Title>
-        )}
+        {title && <Styles.Title hoverBg={hoverBg}>{title}</Styles.Title>}
       </Styles.Button>
     ),
-    [activated, mainBg, hoverBg, icon, title]
+    [activated, hoverBg, icon, title]
   );
 
   return (

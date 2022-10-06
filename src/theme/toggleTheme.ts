@@ -9,6 +9,7 @@ const sharedThemes = {
   CHINESE_BLACK: "#111111",
   GREEN: "#2b2a2a",
   RAISIN_BLACK: "#252525",
+  GAINSBORO: "#dddddd",
 };
 
 export const lightTheme = {
@@ -24,6 +25,11 @@ export const lightTheme = {
   },
   button: {
     background: sharedThemes.BRIGHT_GRAY,
+    activated: sharedThemes.GOLD,
+    icon: {
+      primary: sharedThemes.GRANIT_GRAY,
+      activated: sharedThemes.WHITE,
+    },
   },
   label: sharedThemes.BRIGHT_GRAY,
 };
@@ -41,6 +47,11 @@ export const darkTheme = {
   },
   button: {
     background: sharedThemes.GREEN,
+    activated: sharedThemes.GOLD,
+    icon: {
+      primary: sharedThemes.GAINSBORO,
+      activated: sharedThemes.WHITE,
+    },
   },
   label: sharedThemes.RAISIN_BLACK,
 };

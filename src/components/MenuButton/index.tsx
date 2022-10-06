@@ -9,13 +9,15 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { useTheme } from "../../../context/ThemeProvider";
+import { faMoon } from "@fortawesome/free-solid-svg-icons/faMoon";
 
 const MenuButton = ({
   route,
+  theme,
   toggleTheme,
 }: {
   route: string;
+  theme: string;
   toggleTheme: () => void;
 }) => {
   const buttonsData = [
@@ -55,8 +57,12 @@ const MenuButton = ({
 
   return (
     <Styles.Container>
-      <Styles.DarkToggleContainer onClick={() => toggleTheme()}>
-        <Button icon={faSun as IconProp} mainBg="#4b4b4b" hoverBg="#656565" />
+      <Styles.DarkToggleContainer>
+        <Button
+          icon={(theme === "light" ? faMoon : faSun) as IconProp}
+          onClick={toggleTheme}
+          hoverBg="#656565"
+        />
       </Styles.DarkToggleContainer>
       <Styles.MenuContainer>
         {buttonsData.map((data) => (
