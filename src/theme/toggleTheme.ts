@@ -6,6 +6,7 @@ const sharedThemes = {
   BLACK_OLIVE: "#3b3a3a",
   DARK_GUNMETAL_OPACITY: "rgba(30,37,48,0.07)",
   WHITE_OPACITY: "rgba(255,255,255,0.07)",
+  BLACK_OPACITY: "rgba(0, 0, 0, 0.9)",
   CHINESE_BLACK: "#111111",
   GREEN: "#2b2a2a",
   RAISIN_BLACK: "#252525",
@@ -37,11 +38,13 @@ export const lightTheme = {
   border: {
     primary: `1px solid ${sharedThemes.GAINSBORO}`,
     secondary: `1px solid ${sharedThemes.GAINSBORO}`,
+    modal: `2px solid ${sharedThemes.GAINSBORO}`,
   },
   input: {
     background: sharedThemes.WHITE,
     border: `1px solid ${sharedThemes.GAINSBORO}`,
   },
+  boxShadow: "none",
 };
 
 export const darkTheme = {
@@ -68,9 +71,11 @@ export const darkTheme = {
   border: {
     primary: `1px solid ${sharedThemes.RAISIN_BLACK}`,
     secondary: `1px solid ${sharedThemes.DARK_CHARCOAL}`,
+    modal: `2px solid ${sharedThemes.RAISIN_BLACK}`,
   },
   input: {
     background: sharedThemes.RAISIN_BLACK,
     border: `1px solid ${sharedThemes.CHINESE_BLACK}`,
   },
+  boxShadow: `0 0 7px ${sharedThemes.BLACK_OPACITY}`,
 };

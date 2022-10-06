@@ -41,7 +41,7 @@ export const Avatar = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 30px;
-  box-shadow: 0 0 7px rgb(0, 0, 0, 90%);
+  box-shadow: ${({ theme }) => theme.boxShadow};
   height: calc(100vh - 80px);
   width: 34%;
   padding: 15px 0;

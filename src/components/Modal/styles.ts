@@ -24,8 +24,8 @@ export const ModalContainer = styled.div`
   position: fixed;
   top: 50%;
   left: 50%;
-  border: 2px solid #222;
-  background: #111;
+  border: ${({ theme }) => theme.border.modal};
+  background: ${({ theme }) => theme.body.primary};
   width: 1205px;
   height: 80vh;
   border-radius: 10px;
