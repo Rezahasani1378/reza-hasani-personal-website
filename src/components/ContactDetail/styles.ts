@@ -18,6 +18,7 @@ export const IconContainer = styled.div`
 
 export const DescriptionContainer = styled.div`
   margin-left: 20px;
+  color: ${({ theme }) => theme.fontColor.primary};
 `;
 
 export const Title = styled.span`

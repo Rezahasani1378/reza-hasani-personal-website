@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.a`
-  background: #2b2a2a;
+  background: ${({ theme }) => theme.button.background};
   border-radius: 50%;
-  color: #fff;
   font-size: 17px;
   width: 40px;
   height: 40px;
@@ -13,6 +12,10 @@ export const Container = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  img {
+    filter: invert(0.4) contrast(0.9);
+  }
 
   &:hover {
     background-color: var(--main-primary-color);

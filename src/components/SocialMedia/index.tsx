@@ -1,7 +1,7 @@
 import React from "react";
 import * as Styles from "./styles";
 
-const SocialMedia = ({ icon, href }: { icon: any; href: string }) => {
+const SocialMedia = ({ icon, href }: { icon: string; href: string }) => {
   return (
     <Styles.Container href={href} target="_blank">
       <img src={icon} alt="Social" width="16px" />

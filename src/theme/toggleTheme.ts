@@ -38,6 +38,10 @@ export const lightTheme = {
     primary: `1px solid ${sharedThemes.GAINSBORO}`,
     secondary: `1px solid ${sharedThemes.GAINSBORO}`,
   },
+  input: {
+    background: sharedThemes.WHITE,
+    border: `1px solid ${sharedThemes.GAINSBORO}`,
+  },
 };
 
 export const darkTheme = {
@@ -64,5 +68,9 @@ export const darkTheme = {
   border: {
     primary: `1px solid ${sharedThemes.RAISIN_BLACK}`,
     secondary: `1px solid ${sharedThemes.DARK_CHARCOAL}`,
+  },
+  input: {
+    background: sharedThemes.RAISIN_BLACK,
+    border: `1px solid ${sharedThemes.CHINESE_BLACK}`,
   },
 };

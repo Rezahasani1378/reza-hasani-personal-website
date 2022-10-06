@@ -115,10 +115,10 @@ export const Separator = styled.hr`
 `;
 
 export const Input = styled.input`
-  background: #252525;
-  border: 1px solid #111;
+  background: ${({ theme }) => theme.input.background};
+  border: ${({ theme }) => theme.input.border};
   border-radius: 30px;
-  color: #fff;
+  color: ${({ theme }) => theme.fontColor.primary};
   outline: none !important;
   padding: 14.5px 26px;
   transition: 0.3s;
@@ -133,10 +133,10 @@ export const Input = styled.input`
 
 //todo: duplicated previous lines
 export const TextArea = styled.textarea`
-  background: #252525;
-  border: 1px solid #111;
+  background: ${({ theme }) => theme.input.background};
+  border: ${({ theme }) => theme.input.border};
   border-radius: 30px;
-  color: #fff;
+  color: ${({ theme }) => theme.fontColor.primary};
   height: 200px;
   outline: none !important;
   overflow: hidden;

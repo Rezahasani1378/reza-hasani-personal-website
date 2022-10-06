@@ -35,6 +35,7 @@ const Description = styled.p`
   margin-top: 0;
   margin-bottom: 1.5rem;
   line-height: 1.6;
+  color: ${({ theme }) => theme.fontColor.primary};
 `;
 
 const SocialListContainer = styled.ul`
