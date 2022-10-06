@@ -15,7 +15,8 @@ const TabContainer = styled.div`
 `;
 
 const TabItem = styled.button<{ active: boolean }>`
-  color: ${({ active }) => (active ? "var(--main-primary-color)" : "#eee")};
+  color: ${({ theme, active }) =>
+    theme.fontColor[active ? "secondary" : "tertiary"]};
   cursor: pointer;
   list-style: none;
   outline: none;
